@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button onclick="pressbutton()">internal</button>
+    <button onclick="external()">external</button>
+    <button id="tag " onclick="tag()">show</button>
+    <h1 id="show"></h1>
+    <input type="text" onkeydown="writesomething()" id="mytext">
+    <h3 id="write"></h3>
+</body>
+</html>
+<script src="external.js"></script>
+<script>
+    function pressbutton(){
+        alert('i just press this button')
+        console.log('help me check something');
+        console.log('30'+ '60');
+        console.log(20 === '20'); //comparing the value and data type 
+        console.log(20 =='20'); // comparing only the value
+    }
+    // variables is a container that is used to save data
+    // type of variables = let, const , var
+    // data is the information
+    // types = string , number, boolean , array ,object ,undefined ,null
+
+    let Name = 'Afolabi'; 
+    console.log(Name);
+
+    function tag(){
+        let sho = document.getElementById('tag')
+        let show = document.getElementById('show')
+        let man = 'welcome'
+        show.innerHTML = man
+    }
+    function writesomething(){
+      let done = document.getElementById('mytext').value;
+        document.getElementById('write').value;
+        write.innerHTML = done
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="censorWord()">click me</button>
+    <div id="display"></div>
+    
+</body>
+</html>
+<script>
+
+    let inputTag = document.getElementById('input')
+    let div = document.getElementById('display')
+   function censorWord(){
+    let value = inputTag.value 
+    let censorValue = value.replaceAll('foolish','*****').replaceAll('stupid','*****').replaceAll('shit','*****').replaceAll('fuck','*****')
+    div.innerHTML = ''
+    let pTag = document.createElement('p')
+     pTag.innerHTML = censorValue
+     div.appendChild(pTag)
+   }
+
+
+</script>

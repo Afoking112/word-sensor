@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    let myString = 'hello'
+    myString1 = myString.toUpperCase()
+    myStrings = myString.toLowerCase()
+    console.log(myString1);
+    console.log(myStrings);
+
+
+    let newString = 'JavaScript knowledge, i love JavaScript'
+    let script = newString.substring(4,10) //substring start with the beggining index not the end point like substr
+    let Java = newString.substr(0,4)
+    console.log(script, newString.length);
+    console.log(Java);
+
+    let val = newString.split(' ')// split work with the input in it if it was told to split by space it will split it one by and if its given another function to be splited by and it can only contain one value
+    console.log(val);
+    val = ['JavaScript Knowledge']
+
+    // trim() helps to remove space in the front and the end of a string
+    let noSpace = newString.trim()
+    console.log(noSpace, noSpace.length);
+
+    // include check if the value is available or exist in the array and it return wether its true or false
+    console.log(newString.includes('Java'));
+
+    //replace() replay a old value with a new value inputed it only contain two value the one you are changing and the one you wants to change to
+    console.log(newString.replaceAll('JavaScript','Python'));
+
+    let value = 'dan iel'
+  let upper1 =  value.replace(' ','')
+    let upper = console.log(value.replace(' ','') )
+    console.log(upper1.toUpperCase());
+
+    console.log('q'.charCodeAt());
+    console.log('b'.charCodeAt());
+    console.log('c'.charCodeAt());
+    console.log('d'.charCodeAt());
+    console.log('e'.charCodeAt());
+    console.log('f'.charCodeAt());
+
+    console.log('A'.charCodeAt());
+    console.log('B'.charCodeAt());
+    console.log('C'.charCodeAt());
+    console.log('D'.charCodeAt());
+    console.log('E'.charCodeAt());
+    console.log('F'.charCodeAt());
+
+    //IndexOf() find the particular alphabet in astring and if its value include likr 3 leters it will only return the first one and if the value is not available it return -1
+    //lastIndexOf() it gives the last index of the alphabet 
+    // concat() for concatinating or joining
+    let first = 'hello,'
+    let sec = 'i am'
+    let third = 'daniel'
+
+    let newsentence = first.concat(sec, ' ',third)
+    console.log(newsentence);
+
+
+    
+    
+</script>
